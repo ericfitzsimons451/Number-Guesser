@@ -6,7 +6,7 @@ var numberGuessed = document.querySelector('.number-guessed');
 var bottomReply = document.querySelector('.bottom-reply');
 var inputReset = document.querySelector('.input-reset');
 var randomNumber = Math.ceil(Math.random() * 100);
-console.log(randomNumber);
+console.log('Random number initial:', randomNumber);
 
 userGuess.addEventListener('keyup', enableButtons);
 guessButton.addEventListener('click', submitGuess);
@@ -65,8 +65,8 @@ function clearInput(event) {
 function resetExecute(event) {
   clearInput(event);
   randomNumber = Math.ceil(Math.random() * 100);
+  console.log('random number reload:', randomNumber)
   topReply.innerText = "Guess a number between 1 and 100!";
   numberGuessed.innerText = "xx";
   bottomReply.innerText = "You can do it!"
-
 };

@@ -47,26 +47,8 @@ header h1 strong {
 }
 
 .guess-button:hover {
-  width: 25%;
-  display: inline-block;
   background-color: #eb008b;
-  border-radius: 30px;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 300;
-  margin: 5% auto;
 }
-
-/*.guess-button:disabled {
-  width: 25%;
-  display: inline-block;
-  background-color: #d0d2d3;
-  border-radius: 30px;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 300;
-  margin: 5% auto;
-}*/
 
 .clear-button {
   width: 25%;
@@ -118,4 +100,12 @@ header h1 strong {
 
 .input-reset:hover {
   background-color: #eb008b;
+}
+
+.clear-button:disabled {
+  background-color: #d0d2d3;
+}
+
+.guess-button:disabled {
+  background-color: #d0d2d3;
 }
