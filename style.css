@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: Open Sans, sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #404041;
+}
+
+header h1 {
+  color: #e6e7e8;
+  text-align: center;
+  padding: 2%;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+header h1 strong {
+  color: #ed458b;
+  font-weight: 700;
+}
+
+.top-buttons {
+ text-align: center;
+ margin-bottom: -3%;
+}
+
+.user-guess {
+  display: block;
+  margin: 0% auto;
+  margin-top: 5%;
+  width: 50%;
+  font-size: 18px;
+}
+
+
+.guess-button {
+  width: 25%;
+  display: inline-block;
+  background-color: #929497;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 5% auto;
+}
+
+.guess-button:hover {
+  width: 25%;
+  display: inline-block;
+  background-color: #eb008b;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 5% auto;
+}
+
+/*.guess-button:disabled {
+  width: 25%;
+  display: inline-block;
+  background-color: #d0d2d3;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 5% auto;
+}*/
+
+.clear-button {
+  width: 25%;
+  display: inline-block;
+  background-color: #929497;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 5% auto;
+}
+
+.clear-button:hover {
+  background-color: #eb008b;
+}
+
+.top-reply {
+  text-align: center;
+  color: #404041;
+  font-weight: 300;
+  margin-bottom: 5%;
+}
+
+.number-guessed {
+  text-align: center;
+  font-size: 130px;
+  font-weight: 300;
+  color: #eb008b;
+  margin-top: -5%;
+  margin-bottom: -5%;
+}
+
+.bottom-reply {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 5%;
+}
+
+.input-reset {
+  display: block;
+  margin: 5% auto;
+  width: 50%;
+  color: #ffffff;
+  background-color: #929497;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.input-reset:hover {
+  background-color: #eb008b;
+}
