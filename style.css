@@ -4,16 +4,16 @@
 }
 
 header {
-  width: 100%;
   background-color: #404041;
+  width: 100%;
 }
 
 header h1 {
   color: #e6e7e8;
-  text-align: center;
-  padding: 2%;
   font-size: 35px;
   font-weight: 300;
+  padding: 2%;
+  text-align: center;
 }
 
 header h1 strong {
@@ -22,98 +22,94 @@ header h1 strong {
 }
 
 .top-buttons {
- text-align: center;
  margin-bottom: -3%;
+ text-align: center;
 }
 
 .user-guess {
   display: block;
-  margin: 0% auto;
+  margin: 5% auto 0%;
   margin-top: 5%;
   width: 50%;
   font-size: 18px;
 }
 
-
 .guess-button {
-  width: 25%;
-  display: inline-block;
   background-color: #929497;
   border-radius: 30px;
-  color: #ffffff;
+  color: #fff;
+  display: inline-block;
   font-size: 18px;
   font-weight: 300;
   margin: 5% auto;
+  width: 25%;
 }
 
 .guess-button:hover {
-  width: 25%;
+  border-radius: 30px;
+  color: #fff;
   display: inline-block;
   background-color: #eb008b;
-  border-radius: 30px;
-  color: #ffffff;
   font-size: 18px;
   font-weight: 300;
   margin: 5% auto;
+  width: 25%;
 }
 
-/*.guess-button:disabled {
-  width: 25%;
-  display: inline-block;
+.guess-button:disabled {
   background-color: #d0d2d3;
-  border-radius: 30px;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 300;
-  margin: 5% auto;
-}*/
+}
 
 .clear-button {
-  width: 25%;
-  display: inline-block;
   background-color: #929497;
   border-radius: 30px;
-  color: #ffffff;
+  color: #fff;
+  display: inline-block;
   font-size: 18px;
   font-weight: 300;
   margin: 5% auto;
+  width: 25%;
 }
 
 .clear-button:hover {
   background-color: #eb008b;
 }
 
+.clear-button:disabled {
+  background-color: #d0d2d3;
+}
+
 .top-reply {
-  text-align: center;
   color: #404041;
   font-weight: 300;
   margin-bottom: 5%;
+  text-align: center;
 }
 
 .number-guessed {
-  text-align: center;
+  color: #eb008b;
   font-size: 130px;
   font-weight: 300;
-  color: #eb008b;
   margin-top: -5%;
   margin-bottom: -5%;
+  text-align: center;
 }
 
 .bottom-reply {
-  text-align: center;
   font-weight: 300;
   margin-top: 5%;
+  text-align: center;
 }
 
 .input-reset {
-  display: block;
-  margin: 5% auto;
-  width: 50%;
-  color: #ffffff;
   background-color: #929497;
   border-radius: 30px;
+  color: #fff;
+  display: block;
   font-size: 18px;
   font-weight: 300;
+  margin: 5% auto;
+  width: 50%;
 }
 
 .input-reset:hover {
