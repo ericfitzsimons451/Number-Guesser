@@ -21,13 +21,17 @@ header h1 strong {
   font-weight: 700;
 }
 
+.hidden {
+  display: none;
+}
+
 .top-buttons {
  margin-bottom: -3%;
  text-align: center;
 }
 
-.user-min-input,
-.user-max-input {
+#user-min-input,
+#user-max-input {
   font-size: 25px;
   outline: none;
   position: relative;
@@ -46,7 +50,7 @@ header h1 strong {
   width: 200px;
 }
 
-.user-guess {
+#user-guess {
   display: block;
   font-size: 18px;
   margin: 5% auto 0%;
@@ -123,7 +127,7 @@ header h1 strong {
   text-align: center;
 }
 
-.input-reset {
+#input-reset {
   background-color: #929497;
   border-radius: 30px;
   color: #fff;
@@ -135,7 +139,7 @@ header h1 strong {
   width: 50%;
 }
 
-.input-reset:hover {
+#input-reset:hover {
   background-color: #eb008b;
 }
 

@@ -1,16 +1,17 @@
 /* Variables referencing HTML classes/ids*/
 
-var userGuess = document.querySelector('.user-guess');
+var userGuess = document.querySelector('#user-guess');
 var guessButton = document.querySelector('.guess-button');
 var clearButton = document.querySelector('.clear-button');
 var topReply = document.querySelector('.top-reply');
 var numberGuessed = document.querySelector('.number-guessed');
 var bottomReply = document.querySelector('.bottom-reply');
-var inputReset = document.querySelector('.input-reset');
+var inputReset = document.querySelector('#input-reset');
 var randomNumber = Math.ceil(Math.random() * 100);
-var userMinInput = document.querySelector('.user-min-input');
-var userMaxInput = document.querySelector('.user-max-input');
+var userMinInput = document.querySelector('#user-min-input');
+var userMaxInput = document.querySelector('#user-max-input');
 var rangeButton = document.querySelector('.range-button');
+var guessRangeSubmit = document.querySelector('#guess-range-submit');
 
 /* Event Listeners */
 
@@ -106,12 +107,14 @@ function clearInput(event) {
 
 function resetExecute(event) {
   clearInput(event);
+  guessRangeSubmit.classList.add('hidden');
 };
 
 function createRange() {
 var minRange = parseInt(userMinInput.value) || 1;
 var maxRange = parseInt(userMaxInput.value) || 100;
 randomNumber = getRandomInt(minRange, maxRange);
+guessRangeSubmit.classList.remove('hidden');
 };
 
 function getRandomInt(min, max) {

@@ -10,11 +10,12 @@
   </header>
   <form>
     <section class="top-buttons">
-      <input class="user-min-input" type="number" placeholder="Optional minimum" >
-      <input class="user-max-input" type="number" placeholder="Optional maximum" >
+      <input id="user-min-input" type="number" placeholder="Optional minimum" >
+      <input id="user-max-input" type="number" placeholder="Optional maximum" >
       <button class="range-button" type="button">Submit Range</button>
+      <h2 class="hidden" id="guess-range-submit">Range submitted!</h2>
     </section>
-      <input class="user-guess" type="number" placeholder="Enter your guess"
+      <input id="user-guess" type="number" placeholder="Enter your guess"
      required >
     <section class="top-buttons">
         <button class="guess-button" disabled="true">Guess</button>
@@ -23,7 +24,7 @@
     <h3 class="top-reply">Guess a number between 1 and 100!</h3>
     <p class="number-guessed">XX</p>
     <h3 class="bottom-reply">You can do it!</h3>
-    <input class="input-reset" type="reset" placeholder="Reset" >
+    <input id="input-reset" type="reset" placeholder="Reset" >
   </form>
   <script src="script.js" rel="script" type="text/javascript" ></script>
 </body>
