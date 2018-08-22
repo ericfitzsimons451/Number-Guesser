@@ -93,6 +93,4 @@ function clearInput(event) {
 
 function resetExecute(event) {
   clearInput(event);
-  basicState();
 };
-

@@ -117,3 +117,11 @@ header h1 strong {
 .input-reset:hover {
   background-color: #eb008b;
 }
+
+.clear-button:disabled {
+  background-color: #d0d2d3;
+}
+
+.guess-button:disabled {
+  background-color: #d0d2d3;
+}
