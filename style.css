@@ -42,6 +42,7 @@ header h1 strong {
   font-size: 18px;
   font-weight: 300;
   margin: 5% auto;
+  outline: none;
   width: 25%;
 }
 
@@ -68,6 +69,7 @@ header h1 strong {
   font-size: 18px;
   font-weight: 300;
   margin: 5% auto;
+  outline: none;
   width: 25%;
 }
 

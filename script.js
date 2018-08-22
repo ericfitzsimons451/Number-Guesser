@@ -65,7 +65,7 @@ function tooLow() {
 function notNumber () {
   topReply.innerText = 'Your last guess was';
   numberGuessed.innerText = 'Not a Number';
-  bottomReply.innerText = 'Please guess an acutal number.';
+  bottomReply.innerText = 'Please guess an actual number.';
 };
 
 function correctGuess () {
