@@ -26,12 +26,32 @@ header h1 strong {
  text-align: center;
 }
 
+.user-min-input,
+.user-max-input {
+  font-size: 25px;
+  outline: none;
+  position: relative;
+  width: 300px;
+
+}
+
+.range-button {
+  background-color: #404041;
+  border-radius: 30px;
+  color: #fff;
+  display: block;
+  font-size: 25px;
+  margin: 10px auto 10px;
+  outline: none;
+  width: 200px;
+}
+
 .user-guess {
   display: block;
+  font-size: 18px;
   margin: 5% auto 0%;
   margin-top: 5%;
   width: 50%;
-  font-size: 18px;
 }
 
 .guess-button {
@@ -111,6 +131,7 @@ header h1 strong {
   font-size: 18px;
   font-weight: 300;
   margin: 5% auto;
+  outline: none;
   width: 50%;
 }
 

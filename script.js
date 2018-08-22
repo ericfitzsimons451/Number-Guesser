@@ -1,6 +1,5 @@
-
-
 /* Variables referencing HTML classes/ids*/
+
 var userGuess = document.querySelector('.user-guess');
 var guessButton = document.querySelector('.guess-button');
 var clearButton = document.querySelector('.clear-button');
@@ -9,13 +8,17 @@ var numberGuessed = document.querySelector('.number-guessed');
 var bottomReply = document.querySelector('.bottom-reply');
 var inputReset = document.querySelector('.input-reset');
 var randomNumber = Math.ceil(Math.random() * 100);
+var userMinInput = document.querySelector('.user-min-input');
+var userMaxInput = document.querySelector('.user-max-input');
+var rangeButton = document.querySelector('.range-button');
 
 /* Event Listeners */
+
 userGuess.addEventListener('keyup', enableButtons);
 guessButton.addEventListener('click', submitGuess);
 clearButton.addEventListener('click', clearInput);
 inputReset.addEventListener('click', resetExecute);
-
+rangeButton.addEventListener('click', createRange);
 /*FUNctions*/
 
 function enableButtons() {
@@ -23,7 +26,15 @@ function enableButtons() {
     guessButton.disabled = true;
     clearButton.disabled = true;
     inputReset.disabled = true;
-  } else {
+  } else if (userMinInput === '') {
+    guessButton.disabled = true;
+    clearButton.disabled = true;
+    inputReset.disabled = true;
+  } else if (userMaxInput === '') {
+    guessButton.disabled = true;
+    clearButton.disabled = true;
+    inputReset.disabled = true;
+  } else {   
     guessButton.disabled = false;
     clearButton.disabled = false;
     inputReset.disabled = false;
@@ -68,7 +79,7 @@ function notNumber () {
   bottomReply.innerText = 'Please guess an actual number.';
 };
 
-function correctGuess () {
+function correctGuess() {
   topReply.innerText = 'Wow!  You got it!';
   bottomReply.innerText = "Boom goes the dynamite!"
 };
@@ -89,8 +100,22 @@ function compareGuess() {
 function clearInput(event) {
   event.preventDefault();
   userGuess.value = '';
+  userMinInput.value = '';
+  userMaxInput.value = '';
 };
 
 function resetExecute(event) {
   clearInput(event);
+};
+
+function createRange() {
+var minRange = parseInt(userMinInput.value) || 1;
+var maxRange = parseInt(userMaxInput.value) || 100;
+randomNumber = getRandomInt(minRange, maxRange);
+};
+
+function getRandomInt(min, max) {
+  var minRange = Math.ceil(min);
+  var maxRange = Math.floor(max);
+  return Math.floor(Math.random() * (maxRange - minRange)) + minRange; 
 };
