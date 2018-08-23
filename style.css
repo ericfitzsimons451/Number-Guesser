@@ -26,10 +26,11 @@ header h1 strong {
  text-align: center;
 }
 
-.user-guess {
+#user-guess {
   display: block;
   margin: 5% auto 0%;
   margin-top: 5%;
+  outline: none;
   width: 50%;
   font-size: 18px;
 }
@@ -46,7 +47,7 @@ header h1 strong {
   width: 25%;
 }
 
-.guess-button:hover {
+.guess-button:hover:enabled {
   border-radius: 30px;
   color: #fff;
   display: inline-block;
@@ -73,7 +74,7 @@ header h1 strong {
   width: 25%;
 }
 
-.clear-button:hover {
+.clear-button:hover:enabled {
   background-color: #eb008b;
 }
 
@@ -103,7 +104,7 @@ header h1 strong {
   text-align: center;
 }
 
-.input-reset {
+#input-reset {
   background-color: #929497;
   border-radius: 30px;
   color: #fff;
@@ -111,10 +112,11 @@ header h1 strong {
   font-size: 18px;
   font-weight: 300;
   margin: 5% auto;
+  outline: none;
   width: 50%;
 }
 
-.input-reset:hover {
+#input-reset:hover {
   background-color: #eb008b;
 }
 

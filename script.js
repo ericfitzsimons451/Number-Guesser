@@ -1,14 +1,15 @@
 
 
 /* Variables referencing HTML classes/ids*/
-var userGuess = document.querySelector('.user-guess');
+var userGuess = document.querySelector('#user-guess');
 var guessButton = document.querySelector('.guess-button');
 var clearButton = document.querySelector('.clear-button');
 var topReply = document.querySelector('.top-reply');
 var numberGuessed = document.querySelector('.number-guessed');
 var bottomReply = document.querySelector('.bottom-reply');
-var inputReset = document.querySelector('.input-reset');
+var inputReset = document.querySelector('#input-reset');
 var randomNumber = Math.ceil(Math.random() * 100);
+console.log(randomNumber);
 
 /* Event Listeners */
 userGuess.addEventListener('keyup', enableButtons);
@@ -22,7 +23,7 @@ function enableButtons() {
   if (userGuess.value === '') {
     guessButton.disabled = true;
     clearButton.disabled = true;
-    inputReset.disabled = true;
+    // inputReset.disabled = true;
   } else {
     guessButton.disabled = false;
     clearButton.disabled = false;
@@ -35,10 +36,12 @@ function basicState() {
   topReply.innerText = 'Guess a number between 1 and 100.';
   numberGuessed.innerText = 'XX';
   bottomReply.innerText = 'Believe in yourself.  You can do it!';
+  userGuess.value = '';
 };
 
 function submitGuess(event) {
   event.preventDefault();
+  enableButtons();
   var parsedNumber = parseInt(userGuess.value);
   if (parsedNumber <= 0 || parsedNumber >= 101) {
     alert('Please guess a number within the specified range.');
@@ -69,7 +72,9 @@ function notNumber () {
 };
 
 function correctGuess () {
+  var parsedNumber = parseInt(userGuess.value);
   topReply.innerText = 'Wow!  You got it!';
+  numberGuessed.innerText = parsedNumber;
   bottomReply.innerText = "Boom goes the dynamite!"
 };
 
@@ -92,5 +97,8 @@ function clearInput(event) {
 };
 
 function resetExecute(event) {
-  clearInput(event);
+  console.log("reset function fires");
+  event.preventDefault();
+  // clearInput(event);
+  basicState();
 };
